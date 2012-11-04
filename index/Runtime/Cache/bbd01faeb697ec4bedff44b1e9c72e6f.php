@@ -1,0 +1,3 @@
+<?php if (!defined('THINK_PATH')) exit();?><div class="album_items_add_dialog box_content"><table cellpadding="10"><tr><td rowspan="3" class="thumb" valign="top"></td><td>            	专辑
+            	<select id="pid"><?php if(empty($list)): ?><option value="0">默认专辑</option><?php endif; if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$val): $mod = ($i % 2 );++$i;?><option value="<?php echo ($val["id"]); ?>"><?php echo ($val["title"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?></select></td></tr><tr><td>            	备注
+            	<textarea></textarea></td></tr><tr><td><input type="submit" class="submit" value="确定"/></td></tr></table></div>
